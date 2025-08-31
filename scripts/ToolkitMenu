@@ -1,0 +1,36 @@
+#!/bin/bash
+
+SCRIPTS_DIR="$HOME/Desktop/scripts"
+
+while true; do
+     clear
+     echo "============================"
+     echo "BEGINER HACKER TOOLKIT MENU"
+     echo "Created by: Joker & Calanthe"
+     echo "============================"
+     echo 
+     echo "Select a tool:"
+     echo "1) GhostMode        - Change MAC, start Tor, go stealth"
+     echo "2) NetworkRecon     - Scan local network with nmap"
+     echo "3) vanisher         - Clear logs and traces"
+     echo "4) vpn-kill         - Emergency kill switch"
+     echo "5) auto-proxy-on    - Route traffic via Tor"
+     echo "6) auto-proxy-off   - Stop Tor routing"
+     echo "7) Exit"
+     echo 
+     read -p "Choose an option [1-7]: " choice
+
+     case $choice in
+         1)
+             read -p "Enter duration in seconds for GhostMode: " duration
+             "$SCRIPTS_DIR/GhostMode" "$duration"
+             ;;
+         2) "$SCRIPTS_DIR/NetworkRecon" ;;
+         3) "$SCRIPTS_DIR/vanisher" ;;
+         4) "$SCRIPTS_DIR/vpn-kill" ;;
+         5) "$SCRIPTS_DIR/auto-proxy-on" ;;
+         6) "$SCRIPTS_DIR/auto-proxy-off" ;;
+         7) echo "[+] Exiting toolkit..."; exit 0 ;;
+         *) echo "[!] Invalid option!"; sleep 1 ;;
+    esac
+ done

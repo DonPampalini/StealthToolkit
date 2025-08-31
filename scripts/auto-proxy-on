@@ -1,0 +1,22 @@
+#!/bin/bash
+
+TOR_PORT=9042
+echo "[+] Enabling Auto-Proxy via Tor..."
+
+sudo iptables -F
+sudo iptables -t nat -F
+
+TOR_UID=$(id -u debian-tor)
+sudo iptables -t nat -A OUTPUT -m owner --uid-owner $TOR_UID -j RETURN
+
+sudo iptables -t nat -A OUTPUT -o lo -j RETURN
+sudo iptables -t nat -A OUTPUT -d 127.0.0.1/32 -j RETURN
+
+sudo iptables -t nat -A OUTPUT -p tcp -j REDIRECT --to-ports $TOR_PORT
+
+sudo iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A OUTPUT -m owner --uid-owner $TOR_UID -j ACCEPT
+sudo iptables -A OUTPUT -d 127.0.0.1/32 -j ACCEPT
+sudo iptables -A OUTPUT -j REJECT
+
+echo "[+] Auto-Proxy active. All traffic is now routed through Tor."

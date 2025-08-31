@@ -1,0 +1,11 @@
+#!/bin/bash
+VPN_INTERFACE ="tun0"
+
+while true; do
+    if ip addr show $VPN_INTERFACE &>/dev/null; then
+       sleep 5
+   else
+       echo "[!] VPN dropped, killing network..."
+       sudo iptables -P OUTPUT DROP
+   fi
+done

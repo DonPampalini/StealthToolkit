@@ -1,0 +1,8 @@
+#!/bin/bash
+IFACE=$(ip route | grep '^default' | awk '{print $5}')
+TIME-${1:-60}
+sudo ip link set $IFACE down
+echo "[+] Disconnected for $TIME seconds..."
+sleep $TIME
+sudo ip link set $IFACE up
+echo "[+] Reconnected."

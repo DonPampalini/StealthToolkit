@@ -1,0 +1,19 @@
+#!/bin/bash
+IFACE=$(ip route | grep '^default' | awk '{print $5}')
+
+if [ -z "$IFACE" ]; then
+    echo "[!] No active network interface found. Are you connected to the in>
+    exit 1
+fi
+
+echo "[*] Using network interface: $IFACE"
+
+sudo ifconfig $IFACE down
+
+sudo macchanger -r $IFACE
+
+sudo ifconfig $IFACE up
+
+sudo systemctl start tor
+
+echo "[+] Stealth mode activated. MAC randomized, Tor started."

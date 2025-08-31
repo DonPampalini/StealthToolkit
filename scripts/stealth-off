@@ -1,0 +1,9 @@
+#!/bin/bash
+IFACE="eth0"
+
+sudo macchanger -p $IFACE
+
+sudo systemctl stop tor
+
+echo "[+] Stealth mode disabled. Original MAC restored, Tor stopped."
+

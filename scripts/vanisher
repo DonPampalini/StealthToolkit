@@ -1,0 +1,4 @@
+#!/bin/bash
+cat /dev/null/ > ~/.bash_history && history -c
+sudo find /var/log -type f -exec truncate -s 0 {} \;
+echo "[+] Logs and bash history cleared"

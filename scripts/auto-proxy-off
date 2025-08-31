@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "[+] Disabling Auto-Proxy..."
+
+sudo iptables -F
+sudo iptables -t nat -F
+
+echo "[+] Auto-Proxy disabled. Direct connection restored."

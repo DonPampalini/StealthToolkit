@@ -1,0 +1,61 @@
+ ==============================
+     Stealth scripts GUIDE
+ ------------------------------
+ BEFORE RUNNING SCRIPTS DOWNLOAD/UPDATE:
+ macchanger
+ tor
+ torsocks
+ nmap
+ net-tools
+ iptables
+ curl
+ ------------------------------ 
+ COMMAND: sudo apt update && sudo apt install -y macchanger tor torsocks nmap net-tools iptables curl
+ ------------------------------
+ - scripts may require sudo
+
+ 1. Ghost Mode
+ - Disconnects your network interface for a set amount of seconds, then reconnects
+ - Usage:
+    GhostMode seconds
+ (ghost-mode 120 will disconnect you for 2 minutes)
+
+ 2. Network Recon
+ - Scans your local network for all active devices.
+ - Usage:
+    NetworkRecon
+ (runs a quick nmap ping scan on your LAN)
+
+ 3. Vanisher
+ - Clears your bash history and truncates system logs.
+ - Usage:
+    vanisher
+ (USE WITH CAUTION -  will remove forensic traces >:D)
+
+ 4. VPN Kill Switch
+ - Monitors your VPN connection (tun0) and blocks internet access if it drops.
+ - Usage: 
+    vpn-kill
+ (press CTRL+C to STOP; blocked internet remains until you run "sudo iptables -P OUTPUT ACCEPT".)
+ 
+ 5. Automatic Proxy on/off
+ - Routes all traffic through Tor automatically using iptables rules.
+ - Then the other one removes Tor routing/restores normal network connection.
+ - Usage:
+    auto-proxy-on
+    auto-proxy-off
+
+ ====================================================
+     ALL SCRIPTS ARE LOCATED IN /usr/local/bin
+ you can run them from anywhere by typing their name.
+         
+ USE ./ if the script files are not in /usr/local/bin
+ example: ./vpn-kill
+ ====================================================
+
+P.S. If this was sent to you vie email or cloud etc...without archiving/it being zipped make sure before running the scripts that you make them executable via code:
+ chmod +x ~Desktop/scripts/thescriptname
+ example: chmod +x ~Desktop/scripts/vanisher
+ this code works only if you put the file on your desktop but you get the jist of it.
+ 
+ /MADE BY Joker&Calanthe
