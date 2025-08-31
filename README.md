@@ -12,8 +12,27 @@ sudo mv scriptname /usr/local/bin
 (In unga bunga language whatever directory you got lost in you can use those scripts freely by just typing their name)
 
 - Tor must be running for proxy scripts to work.
-  
-!!!!ALL FOR EDUCATIONAL PURPOSES ONLY!!!!!
-USING THESE CODES IS AT YOUR OWN RISK, dont forget that hacking is highly illegal
 
-I REPEAT I DO NOT TAKE ANY RESPONSIBILITY FOR HOW YALL USE THIS SHI
+████████████████████████████████████████
+█                                      █
+█      !!! WARNING !!! WARNING !!!      █
+█                                      █
+█  ALL OF THIS IS FOR EDUCATIONAL       █
+█  PURPOSES ONLY!!! USE AT YOUR OWN     █
+█  RISK!!! I AM NOT RESPONSIBLE FOR     █
+█  ANY ILLEGAL SHENANIGANS YOU PULL 😎 █
+█                                      █
+████████████████████████████████████████
+
+           _.-^^---....,,--       
+       _--                  --_  
+      <                        >)
+      |     HACK RESPONSIBLY     | 
+       \._                   _./  
+          ```--. . , ; .--'''       
+                | |   |             
+             .-=||  | |=-.   
+             `-=#$%&%$#=-'   
+                | ;  :|     
+       _____.,-#%&$@%#&#~,._____
+
