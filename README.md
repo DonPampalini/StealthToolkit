@@ -14,4 +14,6 @@ sudo mv scriptname /usr/local/bin
 - Tor must be running for proxy scripts to work.
   
 !!!!ALL FOR EDUCATIONAL PURPOSES ONLY!!!!!
-USING THESE CODES IS AT YOUR OWN RISK hacking is highly illegal
+USING THESE CODES IS AT YOUR OWN RISK, dont forget that hacking is highly illegal
+
+I REPEAT I DO NOT TAKE ANY RESPONSIBILITY FOR HOW YALL USE THIS SHI
