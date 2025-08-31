@@ -13,16 +13,15 @@ sudo mv scriptname /usr/local/bin
 
 - Tor must be running for proxy scripts to work.
 
-████████████████████████████████████████
-█                                      █
-█      !!! WARNING !!! WARNING !!!      █
-█                                      █
-█  ALL OF THIS IS FOR EDUCATIONAL       █
-█  PURPOSES ONLY!!! USE AT YOUR OWN     █
-█  RISK!!! I AM NOT RESPONSIBLE FOR     █
-█  ANY ILLEGAL SHENANIGANS YOU PULL 😎 █
-█                                      █
-████████████████████████████████████████
+
+                                 
+    !!! WARNING !!! WARNING !!!     
+                                    
+  ALL OF THIS IS FOR EDUCATIONAL       
+  PURPOSES ONLY!!! USE AT YOUR OWN    
+  RISK!!! I AM NOT RESPONSIBLE FOR 
+  ANY ILLEGAL SHENANIGANS YOU PULL 😎
+
 
            _.-^^---....,,--       
        _--                  --_  
