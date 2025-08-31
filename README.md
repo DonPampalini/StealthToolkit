@@ -12,3 +12,5 @@ sudo mv scriptname /usr/local/bin
 (In unga bunga language whatever directory you got lost in you can use those scripts freely by just typing their name)
 
 - Tor must be running for proxy scripts to work.
+  
+!!!!ALL FOR EDUCATIONAL PURPOSES ONLY!!!!!
